@@ -90,56 +90,56 @@ name = "Rahul Raj"
 age = 18
 course = "B.Tech"
 city = "Patna"
-print(f"My name is {name}. I am {age} years old. I am studying {course} and I live in {city}.")
+print("My name is, (name). I am, (age) years old. I am studying,(course) and I live in, (city).")
 
 #     Question 14: Student Details    
 name = "Aman Kumar"
 roll_number = 101
 branch = "Computer Science"
 semester = 1
-print(f"My name is {name}. My roll number is {roll_number}. I am studying {branch} in semester {semester}.")
+print("My name is, (name). My roll number is, (roll_number). I am studying, (branch) in semester, (semester).")
 
 #     Question 15: Personal Information    
 name = "Priya Sharma"
 age = 19
 gender = "Female"
 city = "Jaipur"
-print(f"My name is {name}. I am {age} years old. I am {gender} and I live in {city}.")
+print("My name is, (name). I am, (age) years old. I am, (gender) and I live in, (city).")
 
 #     Question 16: Mobile Details    
 brand = "Samsung"
 model = "Galaxy A55"
 ram = "8 GB"
 storage = "256 GB"
-print(f"I have a {brand} {model} with {ram} RAM and {storage} storage.")
+print("I have a, (brand), (model), with, (ram), RAM and, (storage), storage.")
 
 #     Question 17: Employee Introduction    
 name = "Rohit Kumar"
 job_role = "Software Developer"
 company = "ABC Technologies"
 experience = "2 years"
-print(f"My name is {name}. I work as a {job_role} at {company} and I have {experience} of experience.")
+print("My name is, (name),. I work as a, (job_role), at (company), and I have (experience) of experience.")
 
 #     Question 18: College Information    
 college = "XYZ Institute of Technology"
 course = "B.Tech"
 branch = "Information Technology"
 city = "Ahmedabad"
-print(f"I am studying {course} in {branch} at {college} in {city}.")
+print("I am studying, (course), in, (branch), at, (college), in, (city),.")
 
 #     Question 19: Product Information    
 product = "Laptop"
 brand = "HP"
 price = 55000
 quantity = 1
-print(f"I bought {quantity} {brand} {product} for {price} rupees.")
+print("I bought, (quantity), (brand), (product), for, (price), rupees.")
 
 #     Question 20: Family Details    
 name = "Rahul Raj"
 father_name = "Rajesh Kumar"
 mother_name = "Sunita Kumar"
 city = "Patna"
-print(f"My name is {name}. My father's name is {father_name}. My mother's name is {mother_name}. I live in {city}.")
+print("My name is, (name). My father's name is, (father_name). My mother's name is, (mother_name). I live in (city).")
 
 #     Question 21: Student Result    
 name = "Neha Sharma"
@@ -147,7 +147,7 @@ subject = "Python Programming"
 marks = 88
 grade = "A"
 percentage = 88.0
-print(f"{name} scored {marks} marks in {subject}. Her grade is {grade} and her percentage is {percentage}.")
+print("(name), scored, (marks), marks in ,(subject). Her grade is, (grade), and her percentage is, (percentage).")
 
 #     Question 22: Laptop Information    
 brand = "HP"
@@ -156,7 +156,7 @@ processor = "Intel Core i5"
 ram = "16 GB"
 storage = "512 GB SSD"
 price = 65000
-print(f"I have an {brand} {model} with {processor}, {ram} RAM, {storage}, and it costs {price} rupees.")
+print("I have an, (brand), (model), with, (processor), (ram), RAM, (storage), and it costs, (price), rupees.")
 
 #     Question 23: Movie Information    
 movie = "3 Idiots"
@@ -164,7 +164,7 @@ genre = "Comedy Drama"
 rating = 8.4
 language = "Hindi"
 release_year = 2009
-print(f"{movie} is a {genre} movie in {language}. It was released in {release_year} and has a rating of {rating}.")
+print("(movie) is a, (genre), movie in, (language),. It was released in, (release_year), and has a rating of, (rating).")
 
 #     Question 24: Final Mixed Practice    
 name = "Arjun Patel"
@@ -175,7 +175,7 @@ semester = 1
 city = "Ahmedabad"
 percentage = 87.5
 programming_language = "Python"
-print(f"My name is {name}. I am {age} years old and I am studying {branch} in semester {semester} at {college} in {city}. I scored {percentage} percent and my favorite programming language is {programming_language}.")
+print("My name is, (name),. I am ,(age), years old and I am studying, (branch), in semester, (semester), at ,(college), in ,(city),. I scored, (percentage), percent and my favorite programming language is (programming_language).")
 
 
 
