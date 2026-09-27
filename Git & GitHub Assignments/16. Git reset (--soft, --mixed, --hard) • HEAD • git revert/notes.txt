@@ -1,0 +1,3 @@
+this is file for notes of git and github.
+this is the notes for git reset and its type
+there are three type of reset soft, mixed and hard
