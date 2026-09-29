@@ -1,0 +1,37 @@
+Q14. Differentiate between a static website and a dynamic website. Give one real-world example of each.Feature
+
+Feature.        |  Static website       |  Dynamic Website
+                |                       |
+Content Delivery|Delivers fixrd,        |Generates and 
+                |identical HTML/CSSfiles|costumizes 
+                |to every visitor       |content an the 
+                |                       |fly based on user
+                |                       |state or data.
+                |                       |
+                |                       |
+Database        |None content is hard   |Conects to databases and API to fetch live data.
+Integration     |coded into the markup  |
+                |                       |
+                |                       |
+                |                       |
+                |                       |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |
+                |

@@ -1,0 +1,70 @@
+Q1. What is JavaScript?
+
+Java Script is High level Programming which is used to make a website intractive and responsive.
+
+
+Q2. Who created JavaScript and in which year?
+
+JavaScript was created by Drendan Eich in 1995.
+
+
+Q3. What was the original name of JavaScript?
+
+Its Original name was Mocha, which was renamed to LiveScript and then JavaScript after seeing the popularity of Java.
+
+
+Q4. Is JavaScript the same as Java? Give one major difference.
+
+No, Java and JavaScript are two different languages that serves two different perpouse the major difference between java and JavaScript is Java is majorly used for backend perpouse and JavaScript is majorly used for frontend.
+
+
+Q5. What does it mean when we say JavaScript is a high-level programming language?
+
+When we say JavaScript is a high level language is that it can understand by humans and not by computer eg the binary language can understand only by computer and not by humans so it is a low level language.
+
+
+Q6. Is JavaScript a compiled language or an interpreted language? Explain briefly.
+
+JavaScript is a interpreted language because it reads the code line by line not by compiling the whole code like Java.
+
+
+Q7. Name the JavaScript engines used by the following browsers:
+
+Google Chrome
+Mozilla Firefox
+Apple Safari
+
+Google Chrome -> V8
+Mozilla Firefox -> SpiderMonkey
+Apple Safari -> JavaScript Core
+
+
+Q8. What is Dynamic Typing in JavaScript?
+
+Dynamic typing means variable type is not fixed we can change the type of the variable like from number to string on the basis of the situation. 
+
+
+Q9. What is the main difference between a static website and a dynamic website?
+
+A static website displays fixed, pre-built content identical for every user, whereas a dynamic website generates or updates content in real time based on user interactions, database queries, or server responses.
+
+
+Q10. Name the three pillars of Front-end Web Development and write one line about each.
+
+HTML (HyperText Markup Language): Provides the foundational structure and semantic layout of the webpage.
+CSS (Cascading Style Sheets): Controls visual presentation, styling, layout, and responsiveness.
+JavaScript: Implements dynamic behavior, user interactivity, and complex web logic.
+
+
+Q11. What is the difference between Frontend and Backend?
+
+The Frontend (client-side) represents everything users see on the screen the UI, while the Backend (server-side) handles background operations which we can't see on the screen like database management, and API.
+
+
+Q12. What is Node.js?
+Node.js is an open-source, runtime environment that is used to run JavaScript code in our local system. For example the environment built on Google Chrome's V8 engine that allows developers to run JavaScript outside the browser.
+
+
+Q13. Explain ECMAScript. What is its relation with 
+
+JavaScript?ECMAScript (ES) is the formal, standardized specification maintained by Ecma International, whereas JavaScript is the practical, commercial implementation that adheres to and builds upon those specification standards.
