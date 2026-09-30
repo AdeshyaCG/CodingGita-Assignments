@@ -1,0 +1,37 @@
+Q23. Create a complete web page (HTML + JavaScript) that includes the following:
+
+A heading: "My First JavaScript Page"
+A button labeled "Click Me"
+When the button is clicked:
+Show an alert: "Hello, B.Tech Student!"
+Change the background color of the page to light blue
+Also print "JavaScript is running successfully!" in the browser console.
+Write the complete code (you can use Inline or External JavaScript).
+
+
+
+=>  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First JavaScript Page</title>
+</head>
+<body>
+
+  <h1>My First JavaScript Page</h1>
+  <button id="clickBtn">Click Me</button>
+
+  <script>
+    // Print message to the browser console
+    console.log("JavaScript is running successfully!");
+
+    // Add event listener to the button
+    const button = document.getElementById("clickBtn");
+    button.addEventListener("click", function() {
+      alert("Hello, B.Tech Student!");
+      document.body.style.backgroundColor = "lightblue";
+    });
+  </script>
+
+</body>
+</html>

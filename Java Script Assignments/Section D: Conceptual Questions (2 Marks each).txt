@@ -1,37 +1,58 @@
-Q14. Differentiate between a static website and a dynamic website. Give one real-world example of each.Feature
+Q14. Differentiate between a static website and a dynamic website. Give one real-world example of each.
 
-Feature.        |  Static website       |  Dynamic Website
-                |                       |
-Content Delivery|Delivers fixrd,        |Generates and 
-                |identical HTML/CSSfiles|costumizes 
-                |to every visitor       |content an the 
-                |                       |fly based on user
-                |                       |state or data.
-                |                       |
-                |                       |
-Database        |None content is hard   |Conects to databases and API to fetch live data.
-Integration     |coded into the markup  |
-                |                       |
-                |                       |
-                |                       |
-                |                       |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
-                |
+=> • Static Website: Displays fixed content that remains the same for every visitor. Example: A personal resume or portfolio page.
+
+   • Dynamic Website: Interactive, changes content based on user input or real-time data. Example: YouTube or Instagram.
+
+
+Q15. Explain any two features of JavaScript that make it suitable for creating interactive web pages.
+
+=> • Dynamic Typing: Automatically detects data types at runtime, making variable declaration flexible.
+
+   • Event-Driven: Can instantly respond to user actions such as click, keydown, or submit.
+
+
+Q16. List any four areas (apart from web browsers) where JavaScript is used today. Mention one popular framework/library for each 
+(if applicable).
+
+=> Backend: Node.js / Express.js
+
+Mobile Apps: React Native
+
+Desktop Apps: Electron
+
+Games: Phaser / Three.js
+
+
+Q17. What is the difference between writing JavaScript code:
+
+ Inside an HTML file using <script> tag, and In an external .js file?
+ Mention two advantages of using an external JavaScript file.
+
+
+1. Inline scripts are embedded directly inside HTML FILES, whiles external scripts are kept in separate ".js" files and linked via 
+<script src="...">. 
+
+2. Two advantages: 
+• Separation of concerns (Keeps HTML clean and readable).
+• Code reusability across multiple pages and better browser caching.
+
+
+Q18. Explain the difference between Frontend and Backend using the restaurant analogy in your own words.
+
+=> The Fronted is like the customer sitting at the table who views the menu and places an order on a screen. The Backend acts like the 
+waiter who takes the order to the kitchen, where the chef (Database) prepares and stores the ingredients (data). 
+
+
+Q19. Why should a beginner learn JavaScript? Write at least 4 points.
+
+• It makes static websites interactive and alive.
+
+• It works across both client-side (browsers) and server-side (Node.js).
+
+• Beginners can instantly test and see results directly in the browser console.
+
+• It features a massive global developer community with abundant learning resources.
+
+
+

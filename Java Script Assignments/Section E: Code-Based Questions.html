@@ -1,0 +1,56 @@
+Section E: Code-Based Questions (3 Marks each)
+
+
+
+
+Q20. Predict the output of the following code and explain why:
+
+let value = 25;
+console.log(typeof value);
+value = "JavaScript";
+console.log(typeof value);
+value = false;
+console.log(typeof value);
+
+
+=>  number
+
+    string	
+
+    boolean
+
+
+Explanation: JavaScript is dynamically typed, meaning the type of a variable is determined at runtime based on its current value.
+
+
+
+Q21. Write a simple HTML + JavaScript program that displays an alert box with the message "Welcome to JavaScript!" when a button is 
+clicked.
+
+=> <!DOCTYPE html>
+<html>
+<head>
+  <title>Alert Box</title>
+</head>
+<body>
+  <button onclick="alert('Welcome to JavaScript!')">Click Me</button>
+</body>
+</html>
+
+
+
+Q22. Write JavaScript code to demonstrate event-driven programming.
+When a user clicks a button with id "myBtn", the text of a paragraph with id "demo" should change to "Button was clicked!".
+
+
+=>  <p id="demo">Original Text</p>
+<button id="myBtn">Click Me</button>
+
+<script>
+  const btn = document.getElementById("myBtn");
+  const demoText = document.getElementById("demo");
+
+  btn.addEventListener("click", function() {
+    demoText.textContent = "Button was clicked!";
+  });
+</script>
