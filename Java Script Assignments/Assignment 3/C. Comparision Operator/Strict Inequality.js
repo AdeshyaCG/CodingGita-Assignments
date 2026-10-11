@@ -15,4 +15,4 @@ console.log(NaN !== NaN);             // Result => False
 
 // Q5
 let input = "";
-console.log("False", input !== 0);
+console.log("False", input !== "0");
