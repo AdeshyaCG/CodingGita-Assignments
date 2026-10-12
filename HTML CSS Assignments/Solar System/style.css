@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(7, 7, 13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.solar-system {
+  position: relative;
+  width: 900px;
+  height: 900px;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd000, #ed2902);
+  box-shadow: 0 0 30px #ed2902;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  animation: spin linear infinite;
+}
+
+
+.planet {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.mercury-orbit { width: 100px; height: 100px; animation-duration: 4s; }
+.venus-orbit   { width: 150px; height: 150px; animation-duration: 7s;
+    animation-direction: reverse;
+}
+.earth-orbit   { width: 220px; height: 220px; animation-duration: 11s; }
+.mars-orbit    { width: 290px; height: 290px; animation-duration: 15s; }
+.jupiter-orbit { width: 400px; height: 400px; animation-duration: 22s; }
+.saturn-orbit  { 
+    width: 520px; 
+    height: 520px;
+    animation-duration: 30s;
+    animation-direction: reverse;
+}
+.uranus-orbit  { width: 640px; height: 640px; animation-duration: 40s; }
+.neptune-orbit { width: 760px; height: 760px; animation-duration: 52s; }
+
+.mercury { width: 8px;  height: 8px;  background: #a5a5a5; }
+.venus   { width: 13px; height: 13px; background: #e3bb7b; }
+.earth   { width: 14px; height: 14px; background: #3b82f6; box-shadow: 0 0 6px #60a5fa; }
+.mars    { width: 11px; height: 11px; background: #ef4444; }
+.jupiter { width: 26px; height: 26px; background: #d97706; }
+.saturn  { width: 22px; height: 22px; background: #fde047; }
+.uranus  { width: 17px; height: 17px; background: #67e8f9; }
+.neptune { width: 16px; height: 16px; background: #2563eb; }
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

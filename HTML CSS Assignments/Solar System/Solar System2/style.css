@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #0c0d14;
+  background-image: 
+    radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 80px 80px, 150px 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.space {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* MASSIVE SUN - Pushed off-screen to the far-left */
+.sun {
+  position: absolute;
+  top: 50%;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffea00 10%, #ff5100 65%, #990000 100%);
+  box-shadow: 
+    0 0 60px rgba(255, 115, 0, 0.6), 
+    0 0 120px rgba(255, 60, 0, 0.4),
+    inset 0 0 80px rgba(255, 230, 0, 0.8);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* 3D TILTED ORBITS - Perfect circles tilted backwards to form ellipses */
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 0px; 
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  animation: spin-orbit linear infinite;
+}
+
+.planet {
+  position: absolute;
+  top: 0;
+  left: 50%; 
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------------------------------------
+   ORBIT DIMENSIONS & SPEEDS
+------------------------------------------- */
+.mercury-orbit { width: 300px;  height: 300px;  animation-duration: 6s; }
+.venus-orbit   { width: 450px;  height: 450px;  animation-duration: 9s; }
+.earth-orbit   { width: 600px;  height: 600px;  animation-duration: 13s; }
+.mars-orbit    { width: 750px;  height: 750px;  animation-duration: 18s; }
+.jupiter-orbit { width: 1050px; height: 1050px; animation-duration: 25s; }
+.saturn-orbit  { width: 1350px; height: 1350px; animation-duration: 33s; }
+.uranus-orbit  { width: 1650px; height: 1650px; animation-duration: 45s; }
+.neptune-orbit { width: 1950px; height: 1950px; animation-duration: 60s; }
+
+/* -------------------------------------------
+   PLANET DESIGNS
+------------------------------------------- */
+.mercury { width: 14px; height: 14px; background: radial-gradient(circle, #b0b0b0, #666666); }
+.venus   { width: 22px; height: 22px; background: radial-gradient(circle, #f5d393, #a17028); }
+.earth   { width: 24px; height: 24px; background: radial-gradient(circle, #5b99f7, #134ba3); box-shadow: 0 0 10px rgba(91, 153, 247, 0.5); }
+.mars    { width: 18px; height: 18px; background: radial-gradient(circle, #f26644, #85220c); }
+.jupiter { width: 55px; height: 55px; background: radial-gradient(circle, #e3964e, #c9651a, #6e3002); }
+.saturn  { width: 40px; height: 40px; background: radial-gradient(circle, #ead594, #947b41); }
+
+/* Saturn's Rings */
+.saturn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 76px;
+  height: 18px;
+  border: 4px solid rgba(224, 194, 126, 0.6);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.uranus  { width: 32px; height: 32px; background: radial-gradient(circle, #a6edf2, #3895a3); }
+.neptune { width: 30px; height: 30px; background: radial-gradient(circle, #528bf2, #1b428c); }
+
+/* -------------------------------------------
+   ANIMATIONS & 3D COUNTER-SPIN MATH
+------------------------------------------- */
+
+/* Tilts the orbit backward 75deg, then spins it */
+@keyframes spin-orbit {
+  0% { transform: translateY(-50%) rotateX(75deg) rotateZ(0deg); }
+  100% { transform: translateY(-50%) rotateX(75deg) rotateZ(360deg); }
+}
+
+/* Attaches the counter-spin to every planet so they stay upright */
+.mercury-orbit .planet { animation: counter-spin 6s linear infinite; }
+.venus-orbit .planet   { animation: counter-spin 9s linear infinite; }
+.earth-orbit .planet   { animation: counter-spin 13s linear infinite; }
+.mars-orbit .planet    { animation: counter-spin 18s linear infinite; }
+.jupiter-orbit .planet { animation: counter-spin 25s linear infinite; }
+.saturn-orbit .planet  { animation: counter-spin 33s linear infinite; }
+.uranus-orbit .planet  { animation: counter-spin 45s linear infinite; }
+.neptune-orbit .planet { animation: counter-spin 60s linear infinite; }
+
+/* Un-tilts the 75deg X rotation, and reverse-spins the Z rotation */
+@keyframes counter-spin {
+  0% { transform: translate(-50%, -50%) rotateZ(0deg) rotateX(-75deg); }
+  100% { transform: translate(-50%, -50%) rotateZ(-360deg) rotateX(-75deg); }
+}
