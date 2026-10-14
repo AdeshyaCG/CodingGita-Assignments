@@ -1,0 +1,40 @@
+.dashboard {
+  display: flex;
+  width: 1000px;
+  /* height: 400px; */
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.sidebar {
+  /* flex: 1 1 10px; */
+  width: 200px;
+  background-color: #ddd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.side{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.main-content {
+  flex: 0 0 200px;
+  width: 100vw;
+  background: #e8f0ff;
+  min-width: 0;
+}
+
+.activity-panel {
+  flex: 1 1 250px;
+  width: 250px;
+  background: #eee;
+  align-self: auto;
+}
+
+.dashboard > * {
+  padding: 15px;
+}
