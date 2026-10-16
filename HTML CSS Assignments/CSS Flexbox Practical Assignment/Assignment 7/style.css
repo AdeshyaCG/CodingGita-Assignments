@@ -78,3 +78,9 @@ tr:last-child td {
 .align{
     padding-left: 27px;
 }
+.batsman{
+    text-align: left;
+}
+.total{
+    text-align: right;
+}
