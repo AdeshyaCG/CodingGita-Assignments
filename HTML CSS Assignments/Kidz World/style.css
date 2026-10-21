@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* gap: 75vw; */
+    padding: 10px 70px;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.landing{
+    width: 100vw;
+    height: 45vh;
+    /* border: 1px solid black; */
+    background-image: url(image.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 50px;
+}
+pre{
+    font-size: 14mm;
+}
+.main{
+    /* border: 1px solid black; */
+    padding: 150px 50px;
+
+}
+
+.books>p{
+    font-size: larger;
+    font-weight: 200;
+}
+.row{
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    height: 250px;
+    width: 195px;
+    border: 1px solid grey;
+    border-radius: 7%;
+    background-image: url(image\ copy.png);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5px;
+}
+
+.cart2{
+    /* display: flex; */
+    /* border: 1px solid black; */
+    /* width: 60px; */
+    background-color: rgb(68, 127, 237);
+    border-radius: 10%;
+    padding: 0 7px;
+    color: white;
+}
+.title{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.writter{
+    color: gray;
+    margin-bottom: 15px;
+    font-size: small;
+}
+i{
+    display: flex;
+}
+.ammount{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    /* border-radius: 10%; */
+    justify-content: space-between;
+}
+.image2{
+    /* background-image: url(https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/07.kidz-world/assets/book2.png); */
+    background-image: url(image\ copy\ 2.png);
+}
+.image3{
+    background-image: url(image\ copy\ 3.png);
+}
+.image4{
+    background-image: url(image\ copy\ 4.png);
+}
+.image5{
+    background-image: url(image\ copy\ 5.png);
+}
+.image6{
+background-image: url(image\ copy\ 6.png);
+}
+.cardg{
+    /* border: 1px solid black; */
+    width: 20%;
+}
+.imageg{
+    /* border: 1px solid black; */
+    /* width: 200%; */
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6%;
+    margin-bottom: 5px;
+}
+.games{
+    /* border: 1px solid black; */
+    margin-top: 150px;
+}
+.games>p{
+    font-size: larger;
+    font-weight: 200;
+}
+.imageg1{
+    background-image: url(image\ copy\ 8.png);
+}
+.imageg2{
+    background-image: url(image\ copy\ 9.png);
+}
+.imageg3{
+    background-image: url(image\ copy\ 10.png);
+}
+.imageg4{
+    background-image: url(image\ copy\ 11.png);
+}
+.handmade{
+    margin-top: 150px;
+}
+.handmade>p{
+    font-size: larger;
+    font-weight: 200;
+}
+.imageh1{
+    background-image: url(image\ copy\ 12.png);
+}
+.imageh2{
+    background-image: url(image\ copy\ 13.png);
+}
+.imageh3{
+    background-image: url(image\ copy\ 14.png);
+}
+.imageh4{
+    background-image: url(image\ copy\ 15.png);
+}
+.cardh{
+    border: 1px solid bisque;
+}
